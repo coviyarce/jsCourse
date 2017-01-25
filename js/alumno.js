@@ -29,8 +29,9 @@ function Alumno(){
     return("\n Edad "+this.getEdad()+", Nombre "+this.getNombre()+" , Sexo "+this.getSexo());
   };
   this.showName = function() {
-    alert("Este es tu nombre weon: "+getNombre());
-    return true;
+    //alert("Este es tu nombre weon: "+getNombre());// mi hermano como el metodo no esta definido en el contexto local, por q estas en el contexto del metodo mas no de la clase
+    alert("Este es tu nombre weon: "+this.getNombre()) # descomenta
+    return false;// con false sunpende el evento , con tru continua
   };
 }
 
