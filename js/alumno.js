@@ -28,6 +28,10 @@ function Alumno(){
   this.toString = function() {
     return("\n Edad "+this.getEdad()+", Nombre "+this.getNombre()+" , Sexo "+this.getSexo());
   };
+  this.showName = function() {
+    alert("Este es tu nombre weon: "+getNombre());
+    return true;
+  };
 }
 
 Alumno.prototype.toString2 = function () {

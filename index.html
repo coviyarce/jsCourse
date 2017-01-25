@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="js/alumno.js" type="text/javascript"></script>
+  <!-- <script src="js/eventos.js" charset="utf-8" type"text/javascript"></script> -->
   <script type="text/javascript">
     var alumno = new Alumno();
     console.log(alumno);//System.out.print.ln(la instancia de aquí);
@@ -14,11 +15,15 @@
     console.log("el vale creció "+alumno.getEdad());
     console.log(alumno.toString());
     console.log(alumno.toString2());
-
+    // var user = new Eventos();
   </script>
   <title>Clase TalesBum</title>
 </head>
 <body>
-
+ <h1>Esta es un formularia</h1>
+ <form action="#" onsubmit="alumno.showName()">
+   Enter your name: <input id="user" type="text" size="20">
+  <input value="Enviar cabron" type="submit">
+ </form>
 </body>
 </html>
