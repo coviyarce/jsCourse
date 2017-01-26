@@ -31,6 +31,8 @@ function Alumno(){
   this.showName = function() {
     //alert("Este es tu nombre weon: "+getNombre());// mi hermano como el metodo no esta definido en el contexto local, por q estas en el contexto del metodo mas no de la clase
     alert("Este es tu nombre weon: "+this.getNombre());
+    this.user = document.forms[0].id="cilantro";
+    alert("este es el del form, creo -_- "+user);
     return false;// con false sunpende el evento , con tru continua
   };
 }
