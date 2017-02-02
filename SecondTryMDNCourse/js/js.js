@@ -1,11 +1,10 @@
 //js para la página
 function Js() {
   // var this.para = document.querySelector('p');
-  // this.para.addEventListener('click', updateName());
-
     this.edad;
     this.nombre;
     this.sexo;
+    this.contexto=this;
     this.setEdad=function(edad){
       this.edad=edad;
     };
@@ -54,8 +53,18 @@ Js.prototype.updateName = function() {
     console.log("dentro del updateName");
     var name = prompt('enter new name: ');
     this.setNombre(name);
+
     this.para.textContent = 'Player 1: ' + name;
 };
+Js.prototype.eventEtiqueta = function() {
+  local =this;
+  this.para.addEventListener('click',function(){
+    var name = prompt('enter new name: ');
+    local.setNombre(name);
+    console.log(local.getNombre());
+    this.textContent = 'Player 1: ' + name;
+  });
+}
 Js.prototype.variableCambio = function(p) {
   var texto = prompt('cambia el texto: ');
   this.set
